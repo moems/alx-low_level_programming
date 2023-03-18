@@ -18,9 +18,9 @@ int main(void)
 			c3 = c1;
 			while (c3 <= 57)
 			{
-				c4 = c2;
-				if (c3 == c1)
-					c4++;
+				c4 = c2 + 1;
+				if (c3 > c1)
+					c4 = 48;
 				while (c4 <= 57)
 				{
 					putchar(c1);
