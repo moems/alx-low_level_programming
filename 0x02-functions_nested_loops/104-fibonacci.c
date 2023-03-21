@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long i, a, b, temp;
+	long double i, a, b, temp;
 
 	i = 0;
 	a = 0;
@@ -15,7 +15,7 @@ int main(void)
 
 	while (i < 98)
 	{
-		printf("%lu", a + b);
+		printf("%lf", a + b);
 		if (i != 97)
 			printf(", ");
 		else
