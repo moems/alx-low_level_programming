@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet -Function
+ * print_alphabet_x10 -Function
  *
  * Return: Always 0 (Success)
  */
