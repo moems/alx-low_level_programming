@@ -1,10 +1,11 @@
 #include "main.h"
-
 /**
- * natural_numb_sum - prints the sum of all natural numbers that are factors of 3 and 5 below 1024 
+ * main - prints the sum of all natural numbers 
+ * that are factors of 3 and 5 below 1024 
  *
+ * Return: Always 0 (success)
  */
-void natural_numb_sum(void)
+int main(void)
 {
 	int a, b, summ, target;
 
@@ -25,6 +26,7 @@ void natural_numb_sum(void)
 		b += 5;
 	}
 
-
 	printf("%i\n", summ);
+
+	return (0);
 }
