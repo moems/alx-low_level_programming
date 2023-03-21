@@ -15,7 +15,7 @@ int main(void)
 
 	while (i < 98)
 	{
-		printf("%lf", a + b);
+		printf("%Lf", a + b);
 		if (i != 97)
 			printf(", ");
 		else
