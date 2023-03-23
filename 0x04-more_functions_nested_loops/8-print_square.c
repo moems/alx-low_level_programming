@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints a square
+ * print_square - prints a square
  * @n:  the number of times the character # should be printed
  */
-void print_diagonal(int n)
+void print_square(int n)
 {
 	int i, j;
 
@@ -12,7 +12,7 @@ void print_diagonal(int n)
 	while (i < n)
 	{
 		j = 0;
-		while (j < #)
+		while (j < n)
 		{
 			_putchar('#');
 			j++;
