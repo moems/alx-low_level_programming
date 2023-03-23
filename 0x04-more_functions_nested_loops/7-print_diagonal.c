@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints spaces then a backslash at the end 
+ * print_diagonal - prints spaces then a backslash at the end.
  * @n:  the number of times the character \ should be printed
  */
 void print_diagonal(int n)
