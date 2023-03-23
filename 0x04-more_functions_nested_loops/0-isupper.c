@@ -1,5 +1,5 @@
 /**
- * _islower - determines if the character c is lowercase or uppercase
+ * _isupper - determines if the character c is lowercase or uppercase
  * @c: The character to be determined
  *
  * Return: On c being uppercase, 1.
