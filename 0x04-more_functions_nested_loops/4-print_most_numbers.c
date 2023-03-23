@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_numbers - Prints the decimal numbers except 2 and 4
+ * print_most_numbers - Prints the decimal numbers except 2 and 4
  *
  * Return: Always 0 (Success)
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
