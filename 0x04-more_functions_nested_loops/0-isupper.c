@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _islower - determines if the character c is lowercase or uppercase
  * @c: The character to be determined
@@ -9,7 +7,7 @@
  */
 int _isupper(int c)
 {
-	if (c >= 'Z' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
