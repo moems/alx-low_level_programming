@@ -30,10 +30,9 @@ int power(int x, int y)
  */
 void print_number(int n)
 {
-	int i, j, p;
+	int i, p;
 
 	i = 1;
-	j = 10;
 
 	if (n < 0)
 	{
@@ -46,7 +45,7 @@ void print_number(int n)
 		return;
 	}
 
-	while (n / power(j, i) != 0)
+	while (n / power(10, i) != 0)
 	{
 
 		i++;
