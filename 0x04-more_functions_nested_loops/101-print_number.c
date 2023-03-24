@@ -11,8 +11,8 @@ int power(int x, int y)
 {
 	int i;
 
-	i = 1;
-
+	i = 0;
+	i++;
 	if (y == 0)
 		return (1);
 	while (i < y)
@@ -32,8 +32,8 @@ void print_number(int n)
 {
 	int i, p;
 
-	i = 1;
-
+	i = 0;
+	i++;
 	if (n < 0)
 	{
 		_putchar('-');
