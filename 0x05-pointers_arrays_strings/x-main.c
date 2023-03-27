@@ -1,19 +1,30 @@
+#include "main.h"
 #include <stdio.h>
 
-void print_array(int *, int);
-
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int array[1] = {
-		98
-	};
+    int nb;
 
-	print_array(array, 0);
-	print_array(array, -1);
-	return (0);
+    nb = _atoi("98");
+    printf("%d\n", nb);
+    nb = _atoi("-402");
+    printf("%d\n", nb);
+    nb = _atoi("          ------++++++-----+++++--98");
+    printf("%d\n", nb);
+    nb = _atoi("214748364");
+    printf("%d\n", nb);
+    nb = _atoi("0");
+    printf("%d\n", nb);
+    nb = _atoi("Suite 402");
+    printf("%d\n", nb);
+    nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
+    printf("%d\n", nb);
+    nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+    printf("%d\n", nb);
+    return (0);
 }
