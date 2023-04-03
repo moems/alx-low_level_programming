@@ -11,6 +11,9 @@ char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i, j;
 
+	if (if *needle == '\0')
+		return haystack;
+
 	i = 0;
 	while (haystack[i] != '\0')
 	{
