@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strdup - Concactinates two strings
+ * str_concat - Concactinates two strings
  * @s1: String to be concactinated.
  * @s2: String to be concactinated.
  *
@@ -17,7 +17,6 @@ char *str_concat(char *s1, char *s2)
 		while (s1[size1] != '\0')
 			size1++;
 	}
-
 	size2 = 0;
 	if (s2 != NULL)
 	{
@@ -35,8 +34,6 @@ char *str_concat(char *s1, char *s2)
 		cact[i] = s1[i];
 		i++;
 	}
-
-
 	j = 0;
 	while (j < size2)
 	{
@@ -46,7 +43,5 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	cact[i] = '\0';
-
-
 	return (cact);
 }
