@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * str_concat - Concactinates two strings
+ * argstostr - Concactinates two strings
  * @ac: Argument count.
  * @av: Argument Variable.
  *
