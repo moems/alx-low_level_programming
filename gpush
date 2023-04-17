@@ -8,7 +8,7 @@ if [ "$inside_git_repo" ]; then
 	git commit -m $1
 	git push
 
-	echo -e '\n\nDONE!\N'
+	echo -e '\n\nDONE!'
 else
 	echo -e 'Not a git repository'
 fi
