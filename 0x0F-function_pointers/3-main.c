@@ -23,9 +23,9 @@ int main(int ac, char **av)
 	op = av[2];
 	b = atoi(av[3]);
 
+	ans = get_op_func(op);
 
-
-	if (*op != '+' && *op != '-' && *op != '*' && *op != '/' && *op != '%')
+	if (ans == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
@@ -36,8 +36,6 @@ int main(int ac, char **av)
 		printf("Error\n");
 		exit(100);
 	}
-
-	ans = get_op_func(op);
 
 	printf("%i\n", ans(a, b));
 
