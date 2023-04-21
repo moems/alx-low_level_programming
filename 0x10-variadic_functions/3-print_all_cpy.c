@@ -1,19 +1,47 @@
 #include "variadic_functions.h"
 
 /**
+ * count_format - counts format characters in string
+ * @s: the string.
+ *
+ * Return: count of format chars.
+ */
+int count_format(const char * const s)
+{
+	int i, count;
+
+	i = 0;
+	count = 0;
+	while (s[i] != '\0')
+	{
+		switch (s[i])
+		{
+			case 'c':
+			case 'i':
+			case 'f':
+			case 's':
+				count++;
+				break;
+		}
+		i++;
+	}
+	return (count);
+}
+
+/**
  * print_all - prints all arguments passed.
  * @format: the data type of the arguments passed.
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, sep;
+	int i = 0, count = 0, n;
 	char *s;
 	va_list ls;
 
 	va_start(ls, format);
+	n = count_format(format);
 	while (format[i] && format)
 	{
-		sep = 1;
 		switch (format[i])
 		{
 		case 'c':
@@ -35,9 +63,11 @@ void print_all(const char * const format, ...)
 			printf("%s", s);
 			break;
 		default:
-			sep = 0;
+			i++;
+			continue;
 		}
-		if (sep && format[i + 1] != '\0')
+		count++;
+		if (count < n)
 			printf(", ");
 		i++;
 	}
