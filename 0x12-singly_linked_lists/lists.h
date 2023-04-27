@@ -20,6 +20,7 @@ typedef struct list_s
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <string.h>
 
 /* FUNCTION PROTOTYPES */
 int _putchar(char c);
