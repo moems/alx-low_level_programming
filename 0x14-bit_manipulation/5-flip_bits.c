@@ -2,7 +2,7 @@
 
 /**
  * flip_bits - count number of bits in n that need to be converted to get m.
- * @n: an unsigned int long integer number 
+ * @n: an unsigned int long integer number
  * @m: an unsigned int long integer number
  *
  * Return: The number of bits that need to be fliped.
