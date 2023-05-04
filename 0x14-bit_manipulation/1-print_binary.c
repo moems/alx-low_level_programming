@@ -6,12 +6,15 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long b = 1 << 31;
-	int print = 0;
+	unsigned long int b;
+	int i = 63, print = 0;
 
-	while (b > 0)
+
+	while (i >= 0)
 	{
-		if (n & b)
+		b = n >> i
+
+		if (b & 1)
 		{
 			_putchar('1');
 			print = 1;
@@ -21,7 +24,7 @@ void print_binary(unsigned long int n)
 			_putchar('0');
 		}
 
-		b = b >> 1;
+		i--;
 	}
 
 	if (!print)
