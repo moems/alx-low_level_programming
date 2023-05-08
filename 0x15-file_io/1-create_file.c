@@ -22,13 +22,13 @@ int create_file(const char *filename, char *text_content)
 
 	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 	if (fd == -1)
-		return (0);
+		return (-1);
 
 	n_write = write(fd, text_content, i);
 
 	close(fd);
 	if (n_write == -1)
-		return (0);
+		return (-1);
 	else
 		return (1);
 }
